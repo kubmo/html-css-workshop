@@ -1,0 +1,184 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1.5px solid #808080;
+    padding-bottom: 20px;
+    color: #808080;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 75px;
+    font-family: 'Alex Brush', cursive;
+    border-bottom: none;
+}
+
+header,
+section,
+footer {
+    padding: 100px 150px
+}
+
+.loves,
+footer {
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* PAGE HEADER - heading and nav
+-----------------------------------------*/
+header {
+    margin-top: 70px;
+    position: relative;
+    display: block;
+    min-height: 500px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#image-container {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    background: url(../images/denver3.jpg) no-repeat fixed;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+header h1 {
+    position: absolute;
+    top: 150px;
+    font-size: 115px;
+    color: #ffffff;
+    left: 20px;
+    right: 20px;    
+}
+header h2 {
+    position: absolute;
+    top: 250px;
+    font-size: 32px;
+    color: #ffffff;
+    left: 20px;
+    right: 20px;
+    padding-top: 4  0px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    border-top: thick solid #AA00FF;
+}
+
+nav a {
+    display: inline-block; /* changes links from default inline element to add padding properly */
+    text-decoration: none; /* removes underline */
+    margin: 20px; /* adds space around each link */
+    color: #808080;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: lighter;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav a:hover {
+    background: #808080;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+/* Resumen
+-----------------------------------------*/
+.resumen {
+    overflow: hidden;
+}
+
+.resumen h3 {
+    padding-top: 10px;
+    color: #808080;
+}
+
+.resumen p {
+    color: #808080;
+}
+
+#line-break {
+    width: 100px;
+    height: 1px;
+    background: #808080;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.profile-img {
+    float: right;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+/* Fotos
+-----------------------------------------*/
+.fotos {
+    margin-top: -100px;
+}
+.fotos img {
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* FOOTER - contact info
+-----------------------------------------*/
+footer {
+    margin-top: -100px;
+    border-bottom: thick solid #AA00FF;
+}
+
+footer img {
+    height: 45px;
+    width: 50px;
+    margin: 30px;
+}
